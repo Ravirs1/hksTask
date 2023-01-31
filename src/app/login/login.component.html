@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="header">
+      <h1>Login</h1>
+    </div>
+      <div>
+        <form [formGroup]="loginForm" #form="ngForm">
+          <div class="form-element">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" formControlName="username">
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input  name="password" id="password" [type]="toggle ? 'password' : 'text'" formControlName="password">
+            <i *ngIf="toggle" class="fa fa-eye icon" (click)="togglePassword(true)"></i>
+            <i *ngIf="!toggle" class="fa fa-eye-slash icon" (click)="togglePassword(false)" ></i>
+          </div>
+          <div class="button-box">
+            <button (click)="submit()">LogIn</button>
+          </div>
+        </form>
+      </div>
+    </div>

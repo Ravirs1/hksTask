@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.form-element {
+    padding: 1rem;
+}
+
+.form-element label {
+    margin-right: 1rem;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+}
+
+.button-box button {
+    padding: 0.5rem;
+}
+
+.error {
+    color: red;
+}
